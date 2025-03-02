@@ -1,0 +1,218 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("sms.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: static;
+}
+
+#info {
+    text-align: left;
+    background-color: lightgreen;
+    color: #010101;
+    font-size: large;
+}
+
+/* Form Styles */
+#registrationFormSection {
+    background-color: ghostwhite;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#registrationFormSection h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#registrationForm button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1a1e12;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#registrationForm button:hover {
+    background-color: #2f6592;
+}
+
+/* Table Styles */
+#displaySection {
+    background-color: ghostwhite;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#displaySection h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+#studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#studentTable th,
+#studentTable td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#studentTable th {
+    background-color: white;
+    color: #010101;
+}
+
+#studentTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#studentTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button Styles in Table */
+#studentTable button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#studentTable button.edit-btn {
+    background-color: #ffc107;
+    color: #333;
+}
+
+#studentTable button.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+#studentTable button.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#studentTable button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px; 
+    }
+
+    #registrationFormSection h2,
+    #displaySection h2 {
+        font-size: 24px; 
+    }
+
+    .form-group input,
+    #registrationForm button {
+        font-size: 14px;  
+    }
+
+    #studentTable th,
+    #studentTable td {
+        padding: 8px; /* Smaller padding for table cells */
+    }
+
+    #studentTable button {
+        font-size: 12px; 
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px; 
+    }
+
+    #registrationFormSection h2,
+    #displaySection h2 {
+        font-size: 20px; 
+    }
+
+    .form-group input,
+    #registrationForm button {
+        font-size: 12px; 
+    }
+
+    #studentTable th,
+    #studentTable td {
+        padding: 6px; 
+    }
+
+    #studentTable button {
+        font-size: 10px; 
+    }
+}
